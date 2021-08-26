@@ -1,0 +1,76 @@
+.container {
+    width: 70%;
+    margin: auto;
+  }
+  
+  .img {
+    background-size: contain;
+  }
+  .container-50 {
+    width: 40%;
+    background-color: rgb(164, 220, 236);
+    border: 5px solid white;
+    border-radius: 5%;
+    padding: 10px;
+    padding-bottom: 40px;
+    transition: all 0.5s ease-in-out;
+  }
+  .d-flex-space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hide{
+    opacity:0;
+  }
+  
+  .selectPony {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+  }
+  .selectPony:hover {
+    background-color: white;
+    color: lightskyblue;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  button {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: transparent;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+    margin: auto;
+    margin-top: 15px;
+  }
+  button:hover {
+    background-color: lightpink;
+    color: white;
+  }
+  
+  .circleimg {
+    width: 80px;
+    height: 80px;
+    background-color: lightyellow;
+    border-radius: 50%;
+    background-size: contain;
+  }
+  
+  .circleimg:hover{
+    border-width: 10px;
+    border-style: solid;
+    border-color: lightblue;
+    transition: all 0.5s ease-in-out;
+  } 
+  
