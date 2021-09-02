@@ -1,0 +1,20 @@
+<div class="tweet-public" *ngFor="let tweet of tweets">
+  <img [src]="tweet.img" />
+  <div class="usuario">
+    <p>
+      <strong>{{ tweet.name }}</strong>
+    </p>
+    <p>
+      <small>{{ tweet.user }}</small>
+    </p>
+  </div>
+  <span> {{ tweet.text }}</span>
+  <div class="action">
+    <div *ngFor="let item of itemAction">
+      <i
+        (click)="item.callback(tweet)"
+        [class]="tweet.like && item.id === 'like' ? item.full : item.name"
+      ></i>
+    </div>
+  </div>
+</div>

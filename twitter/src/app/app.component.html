@@ -1,0 +1,20 @@
+<div class="contenedor">
+  <app-nav></app-nav>
+  <main>
+    <div class="title-main">
+      <p><b>Inicio</b></p>
+      <i class="fas fa-star"></i>
+    </div>
+    <app-tweet (emitTweet)="pushTweet($event)"></app-tweet>
+    <!-- [nuevoPersonaje]="nuevoPersonaje"
+    (onNuevoPersonaje)="agregarNuevoPersonaje($event)" -->
+    <!-- 
+    <app-tweet
+    (onNewTweet)="escribirTweet()"
+    ></app-tweet> -->
+    <app-tweet-public [tweets]="tweets"></app-tweet-public>
+  </main>
+  <aside>
+    <app-news></app-news>
+  </aside>
+</div>

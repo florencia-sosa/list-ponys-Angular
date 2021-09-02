@@ -1,0 +1,31 @@
+<div class="container-aside">
+  <input type="text" placeholder="Buscar en Twitter" />
+
+  <div class="container-news">
+    <h3>Qué está pasando</h3>
+    <ul>
+      <li *ngFor="let new of news">
+        <small>{{ new.theme }}</small>
+        <p>
+          <strong>{{ new.title }}</strong>
+        </p>
+        <small>{{ new.numberTweets }}</small>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container-news">
+    <h3>A quién seguir</h3>
+    <ul>
+      <li class="user" *ngFor="let user of profiles">
+        <img [src]="user.img" alt="" />
+        <div class="username">
+          <strong>{{ user.name }}</strong>
+          <br />
+          <small>{{ user.user }}</small>
+        </div>
+        <button>Seguir</button>
+      </li>
+    </ul>
+  </div>
+</div>

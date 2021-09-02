@@ -1,0 +1,57 @@
+nav {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 1px solid rgb(110, 118, 125);
+  height: 100%;
+  padding-left: 30px;
+}
+nav i {
+  font-size: 35px;
+  color: white;
+}
+nav i.fa-twitter {
+  margin-left: 50px;
+  margin-top: 5px;
+  font-size: 28px;
+  color: rgb(217, 217, 217);
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+li:first-child {
+  font-weight: bold;
+}
+li {
+  padding: 15px;
+  list-style-type: none;
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+}
+li i {
+  font-size: 25px;
+  padding-right: 20px;
+}
+li:hover {
+  background-color: rgb(31, 30, 30);
+}
+
+.btn {
+  border-radius: 9999px;
+  border: 0 solid black;
+}
+
+button {
+  background-color: rgb(29, 155, 240);
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  width: 210px;
+  color: white;
+  padding: 15px;
+  margin-left: 50px;
+  outline: none;
+}

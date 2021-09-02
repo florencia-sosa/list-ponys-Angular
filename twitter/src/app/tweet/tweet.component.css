@@ -1,0 +1,47 @@
+.tweet {
+  border-bottom: 1px solid rgb(110, 118, 125);
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 60% 30%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+textarea {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  background-color: black;
+  border: none;
+  border-bottom: 1px solid rgb(110, 118, 125);
+  outline: none;
+  width: 95%;
+  color: white;
+  margin-bottom: 15px;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.tweet img {
+  grid-row: 1/2;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 100%;
+}
+
+button {
+  border-radius: 24px;
+  border: 0 solid black;
+  grid-column: 3/4;
+  background-color: rgb(29, 155, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 103px;
+  color: white;
+  padding: 10px;
+}
+
+

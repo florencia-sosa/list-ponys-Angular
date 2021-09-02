@@ -1,0 +1,11 @@
+<nav>
+    <i class="fab fa-twitter"></i>
+    <ul>
+      <li *ngFor="let item of nav" class="btn">
+        <i [ngClass]="item.icon"></i>
+        {{ item.name }}
+      </li>
+    </ul>
+    <button class="btn"><strong>Twittear</strong></button>
+    <div class="usuario btn"></div>
+  </nav>

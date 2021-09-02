@@ -1,0 +1,16 @@
+<div class="tweet">
+  <img
+    [src]="tweet.img"
+  />
+  <textarea
+    type="text"
+    maxlength="180"
+    name="nombre"
+    placeholder="¿Qué está pasando?"
+    [(ngModel)]="tweet.text"
+  >
+  </textarea>
+  <button class="btn" (click)="escribirTweet()">
+    <strong>Twittear</strong>
+  </button>
+</div>
